@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <header id="inicio">
+        <img alt="logo" src="../img/logo.png">
+        <nav>
+            <ul class="navbar">
+                <li><a href="/cliente/loja">Galeria</a></li>
+                <li><a href="#Fornecedores">Fornecedores</a></li>
+                <li><a href="#Contatos">Contate-nos</a></li>
+
+            </ul>
+        </nav>
+        <p class="navbar log"><a href="login">Login</p></a>
+        <p class="navbar log"> <a href="cadastro">Cadastre-se</p></a>
+    </header>
+
+    <div class="carrossel">
+        <div class="container" id="img">
+            <div class="card">
+                <h1>Ferrari</h1>
+                <img src="../img/img1.png" alt="">
+            </div>
+
+            <div class="card">
+                <h1>Hyundai</h1>
+                <img src="../img/img2.png" alt="" class="">
+
+            </div>
+
+            <div class="card">
+                <h1>Ford</h1>
+                <img src="../img/img3.png" alt="" class="">
+            </div>
+
+            <div class="card">
+                <h1>Chevrolet</h1>
+                <img src="../img/img4.png" alt="" class="">
+
+            </div>
+        </div>
+    </div>
+
+    <a class="btn" href="loja">Compre Agora</a>
+
+    <div class="cards-1" id="Fornecedores">
+        <img src="../img/Ferrari.png" alt="">
+        <img src="../img/Hyundai.png" alt="">
+        <img src="../img/Renault.png" alt="">
+    </div>
+    <div class="cards-2">
+        <img src="../img/Citroen.png" alt="">
+        <img src="../img/Ford.png" alt="">
+        <img src="../img/Chevrolet.png" alt="">
+    </div>
+
+
+    <section>
+        <h2>Central de Ajuda</h2>
+        <form action="" id="Contatos">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email">
+            <label>Mensagem</label>
+            <textarea name="mensagem" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <script src="slides.js"></script>
+</body>
+
+</html>

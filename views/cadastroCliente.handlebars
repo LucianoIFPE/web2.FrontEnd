@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+
+ <div id="container">
+        <header>
+            <h1>Cadastrar</h1>
+        </header>
+        <div id="forms">
+            <form id="form" method="POST" action="/cliente/login">
+                <div class="inputNome">
+                    <input type="text" placeholder="Nome completo" required name="nome">
+                </div>
+
+                <div class="inputNome">
+                    <input type="text" placeholder="Digite seu CPF" required name="cpf">
+                </div>
+
+                <div class="inputData">
+                    <input type="date" required name="data">
+                </div>
+                <div class="inputEmail">
+                    <input type="email" placeholder="user@exemplo.com"  required name="email">
+                </div>
+
+                <div class="inputCep">
+                    <input type="text" placeholder="Digite O CEP da Sua Localidade"  required name="cep">
+                </div>
+
+                <div class="inputNumero">
+                    <input type="number" placeholder="Informe o número da sua residência"  required name="numero">
+                </div> 
+                
+                 <div class="inputBairro">
+                    <input type="text" placeholder="Informe o bairro da sua residência"  required name="bairro">
+                </div>
+                
+                <div class="inputEstado">
+                    <input type="text" placeholder="Digite Seu Estado"  required name="estado">
+                </div>
+
+                <div class="inputSenha">
+                    <input type="password" id="inputSenha" placeholder="Crie uma senha" required minlength="6" name="password">
+                </div>
+                <div class="inputConfir">
+                    <input type="password" id="inputConfir" placeholder="Confirme sua senha" required minlength="6">
+                </div>
+                <button type="submit" id="button">Cadastrar</button>
+                <a href="vendedor/cadastrovendedor">Cadastrar-se como vendedor</a><br><br>
+                <a href="/">VOLTAR</a>
+            </form>
+        </div>
+    </div>
+    </body>
+    </html>

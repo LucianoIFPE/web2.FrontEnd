@@ -1,0 +1,45 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+<body>
+
+ <div id="container">
+        <header>
+            <h1>Cadastrar</h1>
+        </header>
+        <div id="forms">
+            <form id="form" method="POST" action="/vendedor/loginvendedor">
+                <div class="inputNome">
+                    <input type="text" placeholder="Nome completo" required name="nome">
+                </div>
+
+                <div class="inputNome">
+                    <input type="text" placeholder="Digite seu CPF" required name="cpf">
+                </div>
+
+                <div class="inputEmail">
+                    <input type="email" placeholder="user@exemplo.com"  required name="email">
+                </div>
+
+                <div class="inputSenha">
+                    <input type="text" id="inputSenha" placeholder="Telefone para Contato" required minlength="6" name="telefone">
+                </div>
+
+                <div class="inputSenha">
+                    <input type="password" id="inputSenha" placeholder="Crie uma senha" required minlength="6" name="password">
+                </div>
+
+                <div class="inputConfir">
+                    <input type="password" id="inputConfir" placeholder="Confirme sua senha" required minlength="6">
+                </div>
+
+                <button type="submit" id="button">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    </body>
+    </html>

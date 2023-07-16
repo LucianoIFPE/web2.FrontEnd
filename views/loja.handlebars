@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/loja.css">
+</head>
+<body>
+    <header id="inicio">
+        <img alt="logo do site" src="../img/logo.png">
+        <nav>
+            <ul class="navbar">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/vendedor/cadastroproduto">Adicionar Veiculo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card-images">
+            {{#each produtos}}
+            <div class="card">
+                <div class="card-back whith">
+                    <img src="../img_loja/{{foto}}" alt="">
+                    <h3>{{nome}}</h3>
+                    <h4>R$ {{Preco}}</h4>
+                    <h3>Loja: {{nome_loja}}</h3>
+                    <a href="/vendedor/editarProduto/{{id}}" class="comprar">Editar Produto</a>
+                    <a href="/vendedor/loja/{{id}}" class="excluir">Excluir Produto</a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</body>
+</html>

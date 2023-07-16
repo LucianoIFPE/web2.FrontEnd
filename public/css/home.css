@@ -1,0 +1,280 @@
+/* Estilos gerais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #FFF;
+  background: linear-gradient(90deg, #1c0f33 0%, #698c8f 100%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* Estilos do cabeçalho */
+
+header {
+  box-shadow: 0 0.1rem 0.5rem #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header img {
+  width: 120px;
+}
+
+.navbar {
+  display: flex;
+  gap: 3.2rem;
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  transition: 0.3s all;
+  color: rgb(221, 36, 36);
+  cursor: pointer;
+}
+
+.btn_log,
+.btn_log1 {
+  font-size: 30px;
+  margin-left: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.btn_log {
+  background-color: #ff0f0f;
+}
+
+.btn_log1 {
+  background-color: #ff0f0f;
+  margin-right: 10px;
+}
+
+.btn_log:hover,
+.btn_log1:hover {
+  background: #f5f5f5;
+  color: #101026;
+  border-radius: 10px;
+  transition: 0.8s all;
+}
+
+/* Estilos do carrossel */
+
+.carrossel {
+  overflow: hidden;
+  height: 400px;
+  width: 500px;
+  margin: 20px auto;
+}
+
+.container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.container img {
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+}
+
+/* Estilos do botão "Compre Agora" */
+
+.btn {
+  display: block;
+  text-decoration: none;
+  background-color: #ff0f0f;
+  color: #fff;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background: #f5f5f5;
+  color: #101026;
+  border-radius: 10px;
+  transition: 0.8s all;
+}
+
+/* Estilos dos fornecedores */
+
+.cards-1 {
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cards-1 h1 {
+  margin-bottom: 4rem;
+  font-size: 29px;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff3232, rgb(221, 36, 36));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.cards-1 img {
+  width: 200px;
+}
+
+/* Estilos da seção "Central de Ajuda" */
+
+section {
+  margin-top: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  background: #25182f;
+  width: 100%;
+}
+
+section h2 {
+  color: #f5f5f5;
+  font-size: 2.5rem;
+  margin: 2rem;
+  text-align: center;
+}
+
+section form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form label {
+  color: #f5f5f5;
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+form input,
+form textarea {
+  padding: 15px;
+  outline: none;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form button {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #f5f5f5;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+form button:hover {
+  background: #f5f5f5;
+  color: #101026;
+  border-radius: 16px;
+}
+
+/* Estilos responsivos */
+
+@media (max-width: 768px) {
+  .carrossel {
+    width: 90%;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  .btn {
+    width: 150px;
+  }
+
+  .cards-1 {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header img {
+    width: 80px;
+  }
+
+  .navbar {
+    font-size: 16px;
+  }
+
+  .btn_log,
+  .btn_log1 {
+    font-size: 20px;
+  }
+
+  .carrossel {
+    height: 300px;
+  }
+
+  .container img {
+    height: 400px;
+    width: 400px;
+  }
+
+  .btn {
+    font-size: 24px;
+    width: 120px;
+  }
+
+  .cards-1 h1 {
+    font-size: 24px;
+  }
+
+  .cards-1 img {
+    width: 150px;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form input,
+  form textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  form textarea {
+    height: 80px;
+  }
+
+  form button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

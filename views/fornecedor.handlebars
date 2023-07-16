@@ -1,0 +1,79 @@
+<style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+#container {
+    max-width: 450px;
+    justify-content: center;
+    text-align: center;
+    margin: 5rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 3px 3px 1px 0px #00000060;
+}
+header > h1 {
+    padding: 0 1rem 1rem;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 15px;
+}
+#form {
+    padding: 0 1rem 1rem;
+    margin-bottom: 0.5rem;
+}
+input, button {
+    padding: 5px;
+    margin: 5px;
+}
+input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+}
+button{
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 10px 100px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+button:hover{
+    
+    background-color: rgb(0, 255, 85);
+    color: white;
+    transition: all .4s ease-out;
+}
+</style>
+
+<div id="container">
+        <header>
+            <h1>Cadastrar</h1>
+        </header>
+        <div id="forms">
+            <form action="/vendedor/fornecedor" method="post" id="form">
+                <div class="inputNome">
+                    <input type="text" name="fornecedor" placeholder="Nome do Fornecedor" required>
+                </div>
+                
+                <button type="submit" id="button">Cadastrar</button>
+            </form>
+        </div>
+    </div>
