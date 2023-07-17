@@ -11,10 +11,6 @@ const produto = db.sequelize.define('produto',{
         type: db.Sequelize.STRING
     },
 
-    cor:{
-        type: db.Sequelize.STRING
-    },
-
     Preco:{
         type: db.Sequelize.DOUBLE(6,2)
     },
@@ -28,11 +24,6 @@ const produto = db.sequelize.define('produto',{
         foreignKey: 'id_loja'
         
     },
-    
-    tamanho:{
-        type: db.Sequelize.INTEGER
-    },
-
     
 });
 

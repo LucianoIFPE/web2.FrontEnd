@@ -36,13 +36,16 @@ app.use(express.static(path.join(__dirname,"public")))
 
     app.use('/vendedor',rotaVendedor);
     app.use('/cliente',rotaCliente);
+    app.use('/produto',rotaCliente);
+    app.use('/loja',rotaCliente);
+    app.use('/fornecedor',rotaCliente);
    
 
  // Rota de cadastro de cliente
 app.post('/cadastroCliente', (req, res) => {
-    // Aqui você pode processar o cadastro do cliente recebido no req.body
+    // cadastro do cliente 
     const cliente = req.body.cliente;
-    // Exemplo de salvamento no banco de dados:
+    // salva no banco de dados:
     Cliente.cadastro(cliente)
       .then(() => {
         res.send('Cliente cadastrado com sucesso!');
@@ -52,6 +55,30 @@ app.post('/cadastroCliente', (req, res) => {
         res.status(500).send('Erro ao cadastrar o cliente.');
       });
   });
+
+   // Rota de cadastro de produto
+app.post('/cadastroproduto', (req, res) => {
+  // cadastro do produto 
+  const produto = req.body.produto;
+  // salva no banco de dados:
+  produto.cadastro(produto)
+    .then(() => {
+      res.send('produto cadastrado com sucesso!');
+    })
+    .catch((error) => {
+      console.error(error);
+      res.status(500).send('Erro ao cadastrar o produto.');
+    });
+});
+
+   // ----------------- ROTAS PADROES ---------//
+   app.get('/cadastro',(req,res)=>{
+    res.render("cadastroCliente")
+})
+
+app.get('/login',(req,res)=>{
+    res.render('login')
+})
 
    //////LOJA//////
 

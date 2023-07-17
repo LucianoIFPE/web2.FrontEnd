@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  margin-top: -30px;
 }
 
 body {
@@ -20,6 +21,7 @@ a {
 /* Estilos do cabeçalho */
 
 header {
+  margin-top: -50px;
   box-shadow: 0 0.1rem 0.5rem #ccc;
   display: flex;
   align-items: center;
@@ -27,12 +29,14 @@ header {
   padding: 20px;
 }
 
-header img {
-  width: 120px;
+.navbar img {
+  margin-top: -70px;
+  width: 100px;
 }
 
 .navbar {
   display: flex;
+  margin-top: 25%;
   gap: 3.2rem;
   list-style-type: none;
   font-size: 20px;
@@ -46,10 +50,18 @@ header img {
   cursor: pointer;
 }
 
-.btn_log,
+.btn_log {
+  font-size: 30px;
+  margin-top: 55px;
+  margin-left: 30%;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
 .btn_log1 {
   font-size: 30px;
-  margin-left: 10px;
+  margin-top: 55px;
   border-radius: 8px;
   text-decoration: none;
   padding: 5px 10px;
@@ -82,6 +94,7 @@ header img {
 }
 
 .container {
+  margin-top: 50px;
   display: flex;
   transition: transform 0.5s ease-in-out;
   transform: translateX(0);
@@ -103,7 +116,7 @@ header img {
   text-align: center;
   margin: 20px auto;
   padding: 10px;
-  font-size: 32px;
+  font-size: 22px;
   font-weight: bold;
   width: 200px;
   border-radius: 10px;
@@ -146,7 +159,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
+  padding: 10px 45px;
   background: #25182f;
   width: 100%;
 }
@@ -159,12 +172,14 @@ section h2 {
 }
 
 section form {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
 }
 
 form label {
+  margin-top: -20px;
   color: #f5f5f5;
   font-size: 17px;
   margin-bottom: 4px;
@@ -176,6 +191,7 @@ form textarea {
   outline: none;
   border: 0;
   margin-bottom: 20px;
+  border-radius: 5px;
   font-size: 15px;
 }
 
@@ -183,20 +199,21 @@ form textarea {
   height: 100px;
 }
 
-form button {
-  padding: 15px;
-  cursor: pointer;
-  font-size: 16px;
-  background: transparent;
-  border: 2px solid #f5f5f5;
-  color: #f5f5f5;
-  margin-bottom: 20px;
+button {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  padding: 10px 100px;
+  color: #ffffff;
+  font-weight: 700;
 }
 
-form button:hover {
-  background: #f5f5f5;
-  color: #101026;
-  border-radius: 16px;
+button:hover {
+
+  background-color: rgb(0, 255, 85);
+  color: white;
+  transition: all .4s ease-out;
 }
 
 /* Estilos responsivos */
